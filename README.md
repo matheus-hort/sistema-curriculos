@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📄 GestãoCurrículo
 
-## Getting Started
+Sistema web de gestão de currículos desenvolvido com Next.js, permitindo cadastrar, visualizar e gerenciar candidatos de forma simples e eficiente.
 
-First, run the development server:
+## 🚀 Tecnologias Utilizadas
 
+- [Next.js](https://nextjs.org/) — Framework React com App Router
+- [Tailwind CSS](https://tailwindcss.com/) — Estilização responsiva
+- [shadcn/ui](https://ui.shadcn.com/) — Componentes de interface
+- [React Hook Form](https://react-hook-form.com/) — Gerenciamento de formulários
+- [Yup](https://github.com/jquense/yup) — Validação de esquemas
+- [React IMask](https://imask.js.org/) — Máscaras de input
+- [Sonner](https://sonner.emilkowal.ski/) — Notificações toast
+- [React Icons](https://react-icons.github.io/react-icons/) — Ícones
+
+## 📋 Funcionalidades
+
+- ✅ Landing page com benefícios do sistema
+- ✅ Listagem de currículos com busca em tempo real
+- ✅ Cadastro completo com formulário dinâmico
+- ✅ Visualização detalhada de cada candidato
+- ✅ Exclusão de currículos
+- ✅ Validação de formulários com mensagens de erro
+- ✅ Máscaras em CPF, telefone e datas
+- ✅ Persistência de dados no localStorage
+- ✅ Upload fake de imagem
+- ✅ Design responsivo para mobile e desktop
+
+## 📁 Estrutura do Projetosistema-curriculos/
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── sistema/
+│       └── paginas/
+│           └── curriculos/
+│               ├── page.tsx
+│               ├── novo/
+│               │   └── page.tsx
+│               └── [id]/
+│                   └── page.tsx
+├── components/
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   └── ui/
+├── lib/
+│   └── data.ts
+└── public/
+└── fotos/## ▶️ Como Rodar o Projeto
+
+**1. Clone o repositório:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/matheus-hort/sistema-curriculos.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**2. Entre na pasta:**
+```bash
+cd sistema-curriculos
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**3. Instale as dependências:**
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**4. Rode o projeto:**
+```bash
+npm run dev
+```
 
-## Learn More
+**5. Acesse no navegador:**http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍💻 Autor
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desenvolvido por **Matheus Hort** como projeto acadêmico.
