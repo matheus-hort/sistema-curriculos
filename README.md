@@ -9,7 +9,7 @@ Sistema web de gestão de currículos desenvolvido com Next.js, permitindo cadas
 - [shadcn/ui](https://ui.shadcn.com/) — Componentes de interface
 - [React Hook Form](https://react-hook-form.com/) — Gerenciamento de formulários
 - [Yup](https://github.com/jquense/yup) — Validação de esquemas
-- [React IMask](https://imask.js.org/) — Máscaras de input
+- [React IMask](https://imask.js.org/) — Máscaras de input (utilizado como alternativa ao react-input-mask-next, que não estava disponível no npm)
 - [Sonner](https://sonner.emilkowal.ski/) — Notificações toast
 - [React Icons](https://react-icons.github.io/react-icons/) — Ícones
 
