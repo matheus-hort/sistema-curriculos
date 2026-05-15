@@ -69,9 +69,14 @@ export default function DetalheCurriculo() {
       <Card className="mb-6 border-slate-200">
         <CardContent className="pt-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-            <div className="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-3xl flex-shrink-0">
-              {curriculo.nome.charAt(0)}
-            </div>
+            <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+              <img
+                src={curriculo.foto}
+                alt={curriculo.nome}
+                className="w-full h-full object-cover"
+                onError={(e: any) => { e.target.src = "/fotos/default.jpg"; }}
+                />
+              </div>
             <div className="flex-1">
               <h1 className="text-2xl font-bold text-slate-800">{curriculo.nome}</h1>
               <Badge className="bg-blue-100 text-blue-700 mt-1">{curriculo.cargo}</Badge>

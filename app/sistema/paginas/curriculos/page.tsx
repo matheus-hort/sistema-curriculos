@@ -79,10 +79,15 @@ export default function CurriculosPage() {
             <Card key={c.id} className="hover:shadow-md transition-shadow border-slate-200">
               <CardHeader className="pb-3">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-lg flex-shrink-0">
-                    {c.nome.charAt(0)}
+                  <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                    <img
+                      src={c.foto}
+                      alt={c.nome}
+                      className="w-full h-full object-cover"
+                      onError={(e: any) => { e.target.src = "/fotos/default.jpg"; }}
+                    />
                   </div>
-                  <div>
+                 <div>
                     <CardTitle className="text-slate-800 text-base leading-tight">
                       {c.nome}
                     </CardTitle>
